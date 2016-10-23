@@ -1,0 +1,53 @@
+.user-edit {
+  color: $gray;
+  margin: $margin-lg 0;
+  .user-edit__form {
+    display: flex;
+    align-items: flex-start;
+    .user-edit__inputs {
+      flex-grow: 1;
+      .input-group {
+        display: flex;
+        align-items: center;
+        margin: $margin-md 0;
+        &.spacer {
+          margin-bottom: $margin-xl;
+        }
+        label {
+          font-weight: bold;
+          width: 150px;
+        }
+        input[type="text"] {
+          border: 1px solid $gray-light;
+          border-radius: 5px;
+          padding: 5px;
+          width: 60%;
+        }
+      }
+    }
+    input[type="submit"] {
+      background-color: $pink;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      padding: 15px 50px;
+      font-weight: bold;
+      margin-top: $margin-md;
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .user-edit {
+    .user-edit__form {
+      flex-direction: column;
+      .user-edit__inputs {
+        width: 100%;
+      }
+    }
+  }
+}

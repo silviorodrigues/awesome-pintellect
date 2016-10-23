@@ -1,1 +1,46 @@
-<h1>Edit profile</h1>
+<main class="container">
+  <section class="user-profile">
+    <div class="user-profile__information">
+      <img src="http://lorempixel.com/130/130/people/" class="user-picture--big" alt="User Profile Picture">
+      <div class="information__text">
+        <h1>Bruno Oliveira</h1>
+        <span>user@email.com</span>
+        <p><strong>10</strong> Influencing</p>
+        <p><strong>34</strong> Influencers</p>
+      </div>
+    </div>
+    <div class="user-profile__social">
+      <a href="#" target="_blank"><img src="assets/images/ic-slack.svg" alt="User Slack"></a>
+      <a href="#" target="_blank"><img src="assets/images/ic-facebook.svg" alt="User Facebook"></a>
+      <a href="#" target="_blank"><img src="assets/images/ic-twitter.svg" alt="User Twitter"></a>
+      <a href="#" target="_blank"><img src="assets/images/ic-medium.svg" alt="User Medium"></a>
+    </div>
+  </section>
+  <section class="user-edit">
+    <form action="#" class="user-edit__form">
+      <div class="user-edit__inputs">
+        <div class="input-group">
+          <label for="username">User name</label>
+          <input type="text" id="username">
+        </div>
+        <div class="input-group spacer">
+          <label for="email">E-mail</label>
+          <input type="text" id="email">
+        </div>
+        <div class="input-group">
+          <label for="facebook">Facebook</label>
+          <input type="text" id="facebook">
+        </div>
+        <div class="input-group">
+          <label for="twitter">Twitter</label>
+          <input type="text" id="twitter">
+        </div>
+        <div class="input-group">
+          <label for="medium">Medium</label>
+          <input type="text" id="medium">
+        </div>
+      </div>
+      <input type="submit" value="Save">
+    </form>
+  </section>
+</main>
