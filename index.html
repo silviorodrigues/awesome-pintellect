@@ -27,7 +27,7 @@
           <span>Vanhackathon Team</span>
         </div>
         <div class="user-profile__picture">
-          <img src="assets/images/profile-picture.jpg" class="user-picture" alt="User Profile Picture">
+          <img src="//lorempixel.com/50/50/people/" class="user-picture" alt="User Profile Picture">
           <img src="assets/images/channel-profile-picture.jpg" class="user-channel" alt="Channel Picture">
         </div>
       </div>
@@ -37,6 +37,111 @@
       </div>
     </nav>
   </header>
+
+  <main class="container">
+    <section class="share-content">
+      <img src="assets/images/ic-share-illustration.svg" alt="Share your link here">
+      <form action="#">
+        <input type="text" placeholder="Your URL here">
+        <input type="submit" value="Share">
+      </form>
+    </section>
+    <article class="post">
+      <div class="post__thumb">
+        <div class="post__thumb--mask" style="background-image: url('http://lorempixel.com/470/245/');"></div>
+        <div class="post__user-info">
+          <img src="//lorempixel.com/40/40/people/" class="user-picture" alt="User Profile Picture">
+          Ana Cristina
+        </div>
+        <div class="post__actions">
+          <a href="#" class="ic-like"><svg><use xlink:href='assets/images/sprite.svg#ic-like'/></svg> <span>3 likes</span></a>
+          <a href="#" class="ic-share"><svg><use xlink:href='assets/images/sprite.svg#ic-share'/></svg> <span>12 shares</span></a>
+        </div>
+
+      </div>
+      <div class="post__content">
+        <div class="post__informations">
+          <h2>What are your curious about?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi itaque sunt, amet ea qui in suscipit dolore fuga quo numquam quod voluptatibus neque facilis voluptate voluptatem. Ipsam quod velit ea!</p>
+          <a href="#" class="show-more">Show more</a>
+        </div>
+        <div class="post__comment">
+          <form action="#">
+            <textarea placeholder="your comment here..."></textarea>
+            <div class="comment__actions">
+              <p class="comment__counter" id="comment__toggle">1 comments</p>
+              <input type="submit" value="comment">
+            </div>
+          </form>
+        </div>
+        <div class="post__comment-list">
+          <img src="assets/images/ic-close.png" class="comment-list__close" id="comment__toggle" alt="Close comments">
+          <div class="comment-list__item">
+            <img src="//lorempixel.com/40/40/people/" class="user-picture" alt="User Profile Picture">
+            <p>
+              <a href="#">Silvio Rodrigues</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nisi perspiciatis odio distinctio veniam repellat ratione, aspernatur dolorem, nemo iure sed animi itaque et fugit ullam quibusdam. Tenetur, similique pariatur.
+              <span>32 min</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <div class="post__thumb">
+        <div class="post__thumb--mask" style="background-image: url('http://lorempixel.com/470/250/');"></div>
+        <div class="post__user-info">
+          <img src="//lorempixel.com/40/40/people/" class="user-picture" alt="User Profile Picture">
+          João Felipe
+        </div>
+        <div class="post__actions">
+          <a href="#" class="ic-like"><svg><use xlink:href='assets/images/sprite.svg#ic-like'/></svg> <span>3 likes</span></a>
+          <a href="#" class="ic-share"><svg><use xlink:href='assets/images/sprite.svg#ic-share'/></svg> <span>12 shares</span></a>
+        </div>
+
+      </div>
+      <div class="post__content">
+        <div class="post__informations">
+          <h2>What are your curious about?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi itaque sunt, amet ea qui in suscipit dolore fuga quo numquam quod voluptatibus neque facilis voluptate voluptatem. Ipsam quod velit ea!</p>
+          <a href="#" class="show-more">Show more</a>
+        </div>
+        <div class="post__comment">
+          <form action="#">
+            <textarea placeholder="your comment here..."></textarea>
+            <div class="comment__actions">
+              <p class="comment__counter" id="comment__toggle">32 comments</p>
+              <input type="submit" value="comment">
+            </div>
+          </form>
+        </div>
+        <div class="post__comment-list">
+          <img src="assets/images/ic-close.png" class="comment-list__close" id="comment__toggle" alt="Close comments">
+          <div class="comment-list__item">
+            <img src="//lorempixel.com/40/40/people/" class="user-picture" alt="User Profile Picture">
+            <p>
+              <a href="#">Silvio Rodrigues</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nisi perspiciatis odio distinctio veniam repellat ratione, aspernatur dolorem, nemo iure sed animi itaque et fugit ullam quibusdam. Tenetur, similique pariatur.
+              <span>32 min</span>
+            </p>
+          </div>
+          <div class="comment-list__item">
+            <img src="//lorempixel.com/40/40/people/" class="user-picture" alt="User Profile Picture">
+            <p>
+              <a href="#">Silvio Rodrigues</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nisi perspiciatis odio distinctio veniam repellat ratione, aspernatur dolorem, nemo iure sed animi itaque et fugit ullam quibusdam. Tenetur, similique pariatur.
+              <span>32 min</span>
+            </p>
+          </div>
+          <div class="comment-list__item">
+            <img src="//lorempixel.com/40/40/people/" class="user-picture" alt="User Profile Picture">
+            <p>
+              <a href="#">Silvio Rodrigues</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nisi perspiciatis odio distinctio veniam repellat ratione, aspernatur dolorem, nemo iure sed animi itaque et fugit ullam quibusdam. Tenetur, similique pariatur.
+              <span>32 min</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/plugins.min.js"></script>

@@ -90,12 +90,6 @@ header {
       .user-profile__picture {
         margin-left: $margin-sm;
         position: relative;
-        .user-picture {
-          clip-path: circle(50% at 50% 50%);
-          -webkit-clip-path: circle(50% at 50% 50%);
-          height: 40px;
-          width: 40px;
-        }
         .user-channel {
           clip-path: circle(50% at 50% 50%);
           -webkit-clip-path: circle(50% at 50% 50%);
