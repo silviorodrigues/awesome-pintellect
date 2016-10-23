@@ -538,7 +538,7 @@ template {
   color: #fff;
   width: 50%;
   position: relative;
-  padding: 20px;
+  padding: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -621,7 +621,7 @@ template {
 .post .post__content {
   color: #484848;
   width: 50%;
-  padding: 20px;
+  padding: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1407,7 +1407,7 @@ header nav .header__user-menu a:hover {
   background-color: #4a90e2;
 }
 .faq .faq__itens {
-  padding: 32px 0;
+  padding: 64px 0;
 }
 .faq .faq__itens h2 {
   font-size: 3em;
