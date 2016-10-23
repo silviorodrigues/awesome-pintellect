@@ -530,7 +530,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   margin: 32px 0;
-  height: 350px;
+  height: 400px;
 }
 .post .post__thumb {
   background-image: -webkit-linear-gradient(270deg, transparent 50%, #000000 100%);
@@ -563,6 +563,7 @@ template {
   z-index: -1;
 }
 .post .post__thumb .post__user-info {
+  color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -572,9 +573,18 @@ template {
   -ms-flex-align: center;
   align-items: center;
   font-weight: bold;
+  text-decoration: none;
 }
 .post .post__thumb .post__user-info img {
   margin-right: 10px;
+}
+.post .post__thumb .post__user-info p {
+  margin: 0;
+}
+.post .post__thumb .post__user-info p span {
+  display: block;
+  font-weight: normal;
+  font-size: .7em;
 }
 .post .post__thumb .post__actions {
   height: 40px;
@@ -627,8 +637,13 @@ template {
   flex-direction: column;
   position: relative;
 }
+.post .post__content .informations__external-link {
+  color: #4a90e2;
+  font-size: .8em;
+  margin-top: 16px;
+}
 .post .post__content p {
-  margin: 20px 0;
+  margin: 32px 0;
 }
 .post .post__content .show-more {
   color: #4a90e2;
