@@ -1,0 +1,180 @@
+header {
+  align-items: center;
+  background-color: $navy-blue;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: $margin-lg;
+
+  nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .header__search-form {
+      position: relative;
+      .search-form__button {
+        background-color: transparent;
+        background-image: url('assets/images/ic-search-header.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: none;
+        color: transparent;
+        cursor: pointer;
+        width: 24px;
+        white-space: nowrap;
+        height: 24px;
+        outline: none;
+        z-index: 3;
+      }
+
+      .search-form__input {
+        background-color: rgba(255, 255, 255, .1);
+        border: 0;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: .8em;
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        outline: none;
+        &::-webkit-input-placeholder { color: #fff; }
+        &:-moz-placeholder { color: #fff; }
+        &::-moz-placeholder { color: #fff; }
+        &:-ms-input-placeholder { color: #fff; }
+        z-index: 2;
+        transition: ease width .5s;
+        &:focus {
+          cursor: text;
+          padding: 10px;
+          width: 190px;
+          height: initial;
+          position: relative;
+          opacity: 1;
+        }
+      }
+    }
+
+    .header__user-profile {
+      cursor: pointer;
+      display: flex;
+      margin: 0 $margin-lg 0 $margin-md;
+      position: relative;
+      &:after {
+        background: url('assets/images/ic-expand.svg') center center no-repeat;
+        content: '';
+
+        position: absolute;
+        width: 44px;
+        height: 8px;
+        right: -44px;
+        top: calc(50% - 4px);
+      }
+      .user-profile__text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        p {
+          margin: 0;
+          font-weight: bold;
+        }
+        span {
+          font-size: .7em;
+        }
+      }
+      .user-profile__picture {
+        margin-left: $margin-sm;
+        position: relative;
+        .user-picture {
+          clip-path: circle(50% at 50% 50%);
+          -webkit-clip-path: circle(50% at 50% 50%);
+          height: 40px;
+          width: 40px;
+        }
+        .user-channel {
+          clip-path: circle(50% at 50% 50%);
+          -webkit-clip-path: circle(50% at 50% 50%);
+          height: 20px;
+          width: 20px;
+          position: absolute;
+          left: 30px;
+          top: 30px;
+        }
+      }
+    }
+
+    .header__user-menu {
+      background: #FFFFFF;
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+      border-radius: 5px;
+      padding: $margin-xs $margin-md;
+      position: absolute;
+      top: 40px;
+      right: 0px;
+      display: none;
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+        border-top: 0;
+      }
+
+      &:before {
+        top: -8px;
+        right: 2px;
+        border-width: 8px;
+      }
+
+      &:after {
+        top: -5px;
+        right: 5px;
+        border-bottom-color: #fff;
+        border-width: 5px;
+      }
+      a {
+        color: $navy-blue;
+        display: block;
+        margin: $margin-sm 0;
+        width: 150px;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $screen-sm) {
+  header {
+    nav {
+      .header__search-form {
+        .search-form__input {
+          &:focus {
+            position: absolute;
+            top: -5px;
+          }
+        }
+      }
+      .header__user-profile {
+        margin: 0 $margin-lg 0 $margin-xs;
+        .user-profile__text {
+          display: none;
+        }
+        .user-profile__picture {
+          margin-left: $margin-xs;
+        }
+      }
+    }
+  }
+}

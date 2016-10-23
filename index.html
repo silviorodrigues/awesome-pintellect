@@ -4,8 +4,41 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Awesome Pintellect</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+  <header>
+    <div class="header__logo">
+      <a href="/">
+        <img src="assets/images/pintellect-logo.png" alt="Pintellect Logo">
+      </a>
+    </div>
+    <nav>
+      <form action="" class="header__search-form">
+      <button class="search-form__button">Search content</button>
+        <input class="search-form__input" type="text" placeholder="Search content..." />
+      </form>
+      <div class="header__user-profile">
+        <div class="user-profile__text">
+          <p>Afonso Tamashi</p>
+          <span>Vanhackathon Team</span>
+        </div>
+        <div class="user-profile__picture">
+          <img src="assets/images/profile-picture.jpg" class="user-picture" alt="User Profile Picture">
+          <img src="assets/images/channel-profile-picture.jpg" class="user-channel" alt="Channel Picture">
+        </div>
+      </div>
+      <div class="header__user-menu">
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="assets/js/plugins.min.js"></script>
 </body>
 </html>
