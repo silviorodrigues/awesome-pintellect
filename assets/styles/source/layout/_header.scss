@@ -14,7 +14,7 @@ header {
       position: relative;
       .search-form__button {
         background-color: transparent;
-        background-image: url('assets/images/ic-search-header.png');
+        background-image: url('assets/images/ic-search.svg');
         background-repeat: no-repeat;
         background-position: center center;
         border: none;
@@ -58,6 +58,10 @@ header {
           opacity: 1;
         }
       }
+    }
+
+    .header__faq {
+      margin: 0 $margin-sm;
     }
 
     .header__user-profile {

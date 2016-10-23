@@ -831,7 +831,7 @@ header nav .header__search-form {
 }
 header nav .header__search-form .search-form__button {
   background-color: transparent;
-  background-image: url("assets/images/ic-search-header.png");
+  background-image: url("assets/images/ic-search.svg");
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -879,6 +879,9 @@ header nav .header__search-form .search-form__input:focus {
   height: initial;
   position: relative;
   opacity: 1;
+}
+header nav .header__faq {
+  margin: 0 16px;
 }
 header nav .header__user-profile {
   cursor: pointer;
