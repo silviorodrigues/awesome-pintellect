@@ -35,9 +35,13 @@
     }
   }
   .single-post__header {
-    margin: $margin-xl 0;
-    display: flex;
     align-items: center;
+    color: $gray;
+    display: flex;
+    margin: $margin-xl 0;
+    &:hover {
+      color: $gray;
+    }
     p {
       font-weight: bold;
       margin: 0 0 0 $margin-md;

@@ -1,0 +1,152 @@
+.faq {
+  color: $gray;
+  .faq__header {
+    min-height: 80vh;
+    background: url('assets/images/bg-search-faq.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $margin-lg 0;
+    .container {
+      width: 100%;
+      h1 {
+        color: #fff;
+        font-size: 4em;
+        font-weight: normal;
+        margin-bottom: $margin-lg;
+      }
+      form {
+        display: flex;
+        width: 80%;
+        input[type="text"] {
+          border: 1px solid $gray-light;
+          border-radius: 5px;
+          padding: 15px 20px;
+          flex-grow: 1;
+          margin: 0 $margin-sm 0 0;
+        }
+        input[type="submit"] {
+          background-color: $pink;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          padding: 15px 50px;
+          font-weight: bold;
+          &:hover {
+            background-color: $light-blue;
+          }
+        }
+      }
+    }
+  }
+  .faq__itens {
+    padding: $margin-lg 0;
+    h2 {
+      font-size: 3em;
+      margin-bottom: $margin-xl;
+    }
+    .faq__item {
+      color: $gray-light;
+      .item__question {
+        cursor: pointer;
+        padding: $margin-md 0;
+        &:hover {
+          color: $gray;
+        }
+        &.active {
+          color: $gray;
+          font-weight: bold;
+        }
+      }
+      .item__collapsed {
+        color: $gray;
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+  .faq__contact {
+    min-height: 80vh;
+    background: url('assets/images/bg-send-email-faq.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $margin-lg 0;
+    .container {
+      width: 100%;
+      h2 {
+        color: $light-blue;
+        font-size: 4em;
+        font-weight: normal;
+        margin-bottom: $margin-lg;
+      }
+      p {
+        color: #fff;
+        font-size: 1.3em;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 50%;
+        input[type="text"], textarea {
+          background-color: rgba(255, 255, 255, .5);
+          border: 0;
+          border-radius: 5px;
+          color: #fff;
+          margin: $margin-sm 0;
+          padding: 10px 10px;
+          width: 100%;
+          &::-webkit-input-placeholder { color: #fff; }
+          &:-moz-placeholder { color: #fff; }
+          &::-moz-placeholder { color: #fff; }
+          &:-ms-input-placeholder { color: #fff; }
+        }
+        input[type="submit"] {
+          background-color: $pink;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          padding: 15px 50px;
+          font-weight: bold;
+          &:hover {
+            background-color: $light-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .faq {
+    .faq__header {
+      .container {
+        form {
+          width: 100%;
+          flex-direction: column;
+          input[type="text"] {
+            margin: $margin-sm 0;
+          }
+        }
+      }
+    }
+    .faq__contact {
+      .container {
+        form {
+          width: 100%;
+          input[type="text"], textarea {
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}

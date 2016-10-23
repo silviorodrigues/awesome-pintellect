@@ -1046,15 +1046,19 @@ header nav .header__user-menu a:hover {
   margin-bottom: 24px;
 }
 .single-post .single-post__header {
-  margin: 64px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #484848;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 64px 0;
+}
+.single-post .single-post__header:hover {
+  color: #484848;
 }
 .single-post .single-post__header p {
   font-weight: bold;
@@ -1341,6 +1345,195 @@ header nav .header__user-menu a:hover {
   }
   .user-edit .user-edit__form .user-edit__inputs {
     width: 100%;
+  }
+}
+.faq {
+  color: #484848;
+}
+.faq .faq__header {
+  min-height: 80vh;
+  background: url("assets/images/bg-search-faq.jpg") no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 32px 0;
+}
+.faq .faq__header .container {
+  width: 100%;
+}
+.faq .faq__header .container h1 {
+  color: #fff;
+  font-size: 4em;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+.faq .faq__header .container form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+.faq .faq__header .container form input[type="text"] {
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  padding: 15px 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex: 1;
+  flex-grow: 1;
+  margin: 0 16px 0 0;
+}
+.faq .faq__header .container form input[type="submit"] {
+  background-color: #e91c63;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 50px;
+  font-weight: bold;
+}
+.faq .faq__header .container form input[type="submit"]:hover {
+  background-color: #4a90e2;
+}
+.faq .faq__itens {
+  padding: 32px 0;
+}
+.faq .faq__itens h2 {
+  font-size: 3em;
+  margin-bottom: 64px;
+}
+.faq .faq__itens .faq__item {
+  color: #bebebe;
+}
+.faq .faq__itens .faq__item .item__question {
+  cursor: pointer;
+  padding: 24px 0;
+}
+.faq .faq__itens .faq__item .item__question:hover {
+  color: #484848;
+}
+.faq .faq__itens .faq__item .item__question.active {
+  color: #484848;
+  font-weight: bold;
+}
+.faq .faq__itens .faq__item .item__collapsed {
+  color: #484848;
+  display: none;
+}
+.faq .faq__itens .faq__item .item__collapsed.active {
+  display: block;
+}
+.faq .faq__contact {
+  min-height: 80vh;
+  background: url("assets/images/bg-send-email-faq.jpg") no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 32px 0;
+}
+.faq .faq__contact .container {
+  width: 100%;
+}
+.faq .faq__contact .container h2 {
+  color: #4a90e2;
+  font-size: 4em;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+.faq .faq__contact .container p {
+  color: #fff;
+  font-size: 1.3em;
+}
+.faq .faq__contact .container form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 50%;
+}
+.faq .faq__contact .container form input[type="text"], .faq .faq__contact .container form textarea {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  margin: 16px 0;
+  padding: 10px 10px;
+  width: 100%;
+}
+.faq .faq__contact .container form input[type="text"]::-webkit-input-placeholder, .faq .faq__contact .container form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+.faq .faq__contact .container form input[type="text"]::-moz-placeholder, .faq .faq__contact .container form textarea::-moz-placeholder {
+  color: #fff;
+}
+.faq .faq__contact .container form input[type="text"]:-ms-input-placeholder, .faq .faq__contact .container form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+.faq .faq__contact .container form input[type="submit"] {
+  background-color: #e91c63;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 50px;
+  font-weight: bold;
+}
+.faq .faq__contact .container form input[type="submit"]:hover {
+  background-color: #4a90e2;
+}
+
+@media screen and (max-width: 720px) {
+  .faq .faq__header .container form {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .faq .faq__header .container form input[type="text"] {
+    margin: 16px 0;
+  }
+  .faq .faq__contact .container form {
+    width: 100%;
+  }
+  .faq .faq__contact .container form input[type="text"], .faq .faq__contact .container form textarea {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 

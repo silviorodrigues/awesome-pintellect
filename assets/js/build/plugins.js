@@ -1,6 +1,10 @@
 $(document).on('click', '#comment__toggle', function() {
   $(this).parents('.post__content').children('.post__comment-list').stop().fadeToggle( "fast" );
 });
+$(document).on('click', '.item__question', function() {
+  $(this).toggleClass('active');
+  $(this).parents('.faq__item').children('.item__collapsed').toggleClass('active');
+});
 $(document).on('click', '.header__user-profile', function() {
   $( ".header__user-menu" ).stop().fadeToggle( "fast" );
 });
